@@ -4,41 +4,31 @@ import java.util.Scanner;
 
 public class Main {
     static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Informe o 1° número: ");
-        int value1 = scanner.nextInt();
-
-        System.out.println("Informe o 2° número: ");
-        int value2 = scanner.nextInt();
-
-        System.out.println(value1 + " + " + value2 + " = " + (value1 + value2));
-        System.out.printf("%s + %s = %s", value1, value2, value1 + value2);
-
         /*
-         * Operadores Aritméticos em Java
+         * Operadores Bitwise (Bit a Bit) em Java
          *
-         * +  -> Adição
-         * -  -> Subtração
-         * *  -> Multiplicação
-         * /  -> Divisão
-         * %  -> Módulo (resto da divisão)
+         * &  -> AND bit a bit
+         * |  -> OR bit a bit
+         * ^  -> XOR (OU exclusivo) bit a bit
+         * ~  -> NOT (inverte todos os bits)
+         *
+         * Operadores de Deslocamento:
+         * <<  -> Desloca os bits para a esquerda
+         * >>  -> Desloca os bits para a direita (mantém o bit de sinal)
+         * >>> -> Desloca os bits para a direita (preenche com zeros)
          *
          * Exemplos:
-         * int a = 10;
-         * int b = 3;
+         * int a = 5;  // 0101
+         * int b = 3;  // 0011
          *
-         * a + b  // 13
-         * a - b  // 7
-         * a * b  // 30
-         * a / b  // 3  (divisão inteira)
-         * a % b  // 1  (resto da divisão)
+         * a & b   // 0001 = 1
+         * a | b   // 0111 = 7
+         * a ^ b   // 0110 = 6
+         * ~a      // Inverte todos os bits de a
          *
-         * Incremento e Decremento:
-         * ++a  // Pré-incremento: incrementa antes de usar
-         * a++  // Pós-incremento: usa o valor e depois incrementa
-         * --a  // Pré-decremento
-         * a--  // Pós-decremento
+         * a << 1  // 1010 = 10 (multiplica por 2)
+         * a >> 1  // 0010 = 2  (divide por 2)
+         * a >>> 1 // Deslocamento à direita sem sinal
          */
     }
 }
