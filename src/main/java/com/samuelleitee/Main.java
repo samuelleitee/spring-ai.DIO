@@ -1,47 +1,61 @@
 package com.samuelleitee;
 
+import java.util.Scanner;
+
 public class Main {
     static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Quanto é 2 + 2?");
+        int result = scanner.nextInt();
+
+        System.out.printf("O resultado é 4, você acertou? (%s)", result == 2);
+
+        System.out.println("\n----------");
+
+        System.out.println("Quantos anos você tem?");
+        int age = scanner.nextInt();
+
+        System.out.println("Você é emancipado?");
+        boolean emancipated = scanner.nextBoolean();
+
+        System.out.printf("Você pode dirigir? (%s)", age >= 18 || emancipated && age >= 16);
+
+
         /*
-         * Tipos primitivos em Java:
-         * byte    -> inteiro de 8 bits
-         * short   -> inteiro de 16 bits
-         * int     -> inteiro de 32 bits
-         * long    -> inteiro de 64 bits
-         * float   -> ponto flutuante de 32 bits
-         * double  -> ponto flutuante de 64 bits
-         * char    -> caractere Unicode de 16 bits
-         * boolean -> valores lógicos: true ou false
+         * Operadores em Java
          *
-         * Principais keywords (palavras-chave) do Java:
-         * class      -> define uma classe
-         * public     -> acesso público
-         * private    -> acesso privado
-         * protected  -> acesso protegido
-         * static     -> pertence à classe
-         * final      -> constante, método não sobrescrevível ou classe não herdável
-         * void        -> método sem retorno
-         * return      -> retorna um valor de um método
-         * new         -> cria um novo objeto
-         * if / else   -> estrutura condicional
-         * switch      -> seleção de casos
-         * for         -> laço de repetição
-         * while       -> laço com condição
-         * do          -> executa antes de testar a condição
-         * break       -> interrompe um laço ou switch
-         * continue    -> pula para a próxima iteração
-         * try / catch -> tratamento de exceções
-         * finally     -> bloco executado ao final do try/catch
-         * throw       -> lança uma exceção
-         * throws      -> indica exceções que um método pode lançar
-         * this        -> referência ao objeto atual
-         * super       -> referência à superclasse
-         * extends     -> herança entre classes
-         * implements  -> implementação de interface
-         * interface   -> define uma interface
-         * package     -> define o pacote da classe
-         * import      -> importa classes e pacotes
-         * enum        -> define um conjunto de constantes
+         * Operadores Aritméticos:
+         * +  -> adição
+         * -  -> subtração
+         * *  -> multiplicação
+         * /  -> divisão
+         * %  -> resto da divisão (módulo)
+         *
+         * Operadores Relacionais:
+         * == -> igual a
+         * != -> diferente de
+         * >  -> maior que
+         * <  -> menor que
+         * >= -> maior ou igual a
+         * <= -> menor ou igual a
+         *
+         * Operadores Lógicos:
+         * && -> E (AND): verdadeiro se ambas as condições forem verdadeiras
+         * || -> OU (OR): verdadeiro se pelo menos uma condição for verdadeira
+         * !  -> NÃO (NOT): inverte o valor lógico
+         *
+         * Operadores de Atribuição:
+         * =   -> atribuição
+         * +=  -> soma e atribui
+         * -=  -> subtrai e atribui
+         * *=  -> multiplica e atribui
+         * /=  -> divide e atribui
+         * %=  -> resto da divisão e atribui
+         *
+         * Operadores de Incremento/Decremento:
+         * ++ -> incrementa 1
+         * -- -> decrementa 1
          */
     }
 }
