@@ -6,56 +6,39 @@ public class Main {
     static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Quanto é 2 + 2?");
-        int result = scanner.nextInt();
+        System.out.println("Informe o 1° número: ");
+        int value1 = scanner.nextInt();
 
-        System.out.printf("O resultado é 4, você acertou? (%s)", result == 2);
+        System.out.println("Informe o 2° número: ");
+        int value2 = scanner.nextInt();
 
-        System.out.println("\n----------");
-
-        System.out.println("Quantos anos você tem?");
-        int age = scanner.nextInt();
-
-        System.out.println("Você é emancipado?");
-        boolean emancipated = scanner.nextBoolean();
-
-        System.out.printf("Você pode dirigir? (%s)", age >= 18 || emancipated && age >= 16);
-
+        System.out.println(value1 + " + " + value2 + " = " + (value1 + value2));
+        System.out.printf("%s + %s = %s", value1, value2, value1 + value2);
 
         /*
-         * Operadores em Java
+         * Operadores Aritméticos em Java
          *
-         * Operadores Aritméticos:
-         * +  -> adição
-         * -  -> subtração
-         * *  -> multiplicação
-         * /  -> divisão
-         * %  -> resto da divisão (módulo)
+         * +  -> Adição
+         * -  -> Subtração
+         * *  -> Multiplicação
+         * /  -> Divisão
+         * %  -> Módulo (resto da divisão)
          *
-         * Operadores Relacionais:
-         * == -> igual a
-         * != -> diferente de
-         * >  -> maior que
-         * <  -> menor que
-         * >= -> maior ou igual a
-         * <= -> menor ou igual a
+         * Exemplos:
+         * int a = 10;
+         * int b = 3;
          *
-         * Operadores Lógicos:
-         * && -> E (AND): verdadeiro se ambas as condições forem verdadeiras
-         * || -> OU (OR): verdadeiro se pelo menos uma condição for verdadeira
-         * !  -> NÃO (NOT): inverte o valor lógico
+         * a + b  // 13
+         * a - b  // 7
+         * a * b  // 30
+         * a / b  // 3  (divisão inteira)
+         * a % b  // 1  (resto da divisão)
          *
-         * Operadores de Atribuição:
-         * =   -> atribuição
-         * +=  -> soma e atribui
-         * -=  -> subtrai e atribui
-         * *=  -> multiplica e atribui
-         * /=  -> divide e atribui
-         * %=  -> resto da divisão e atribui
-         *
-         * Operadores de Incremento/Decremento:
-         * ++ -> incrementa 1
-         * -- -> decrementa 1
+         * Incremento e Decremento:
+         * ++a  // Pré-incremento: incrementa antes de usar
+         * a++  // Pós-incremento: usa o valor e depois incrementa
+         * --a  // Pré-decremento
+         * a--  // Pós-decremento
          */
     }
 }
